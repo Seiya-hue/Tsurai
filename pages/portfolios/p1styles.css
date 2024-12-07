@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.6;
+    color: white;
+    background-color: #1a1e2e;
+}
+
+header {
+    background: linear-gradient(90deg, #0A1A2F, #2A144F);
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    filter: drop-shadow(7px 10px) linear-gradient(90deg, #0A1A2F, #2A144F);
+}
+
+header .logo {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 110px;
+    height: auto;
+    margin-right: 10px;
+}
+
+header nav {
+    margin-left: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #6067a6;
+}
+
+.search {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.portfolio-banner {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #1e2a40, #3a4662, #563d6e)
+}
+
+.portfolio-banner img {
+    max-width: 50%;
+    height: auto;
+}
+
+.portfolio-banner h1 {
+    font-size: 24px; 
+    margin: 10px 0; 
+}
+
+.portfolio-banner p {
+    font-size: 14px;
+    color: white; 
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.portfolio-item {
+    background: #2e3350;
+    border: 1px solid #444b6e;
+    margin: 10px;
+    padding: 10px;
+    width: calc(45% - 20px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio-item h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.portfolio-item p {
+    font-size: 70%;
+    text-align: left;
+    color: white;
+}
+
+footer {
+  background: #1e1e30;
+  padding: 20px 0;
+  text-align: center;
+  color: #d0d5e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  filter: drop-shadow(7px 10px) linear-gradient(to bottom, #1e1e30, #2a3550, #3b3d60);
+}
+
+footer .logo img {
+  width: 110px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}

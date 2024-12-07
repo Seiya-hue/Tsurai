@@ -1,21 +1,20 @@
-document.addEventListener("DOMContentLoaded", ()=> {
+document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.querySelector('.search');
-    const cards = document.querySelectorAll('.card');
+    const portfolioPages = {
+        'portfolio 1': '../portfolios/portfolio1.html',
+        'portfolio 2': '../portfolios/portfolio2.html',
+        'portfolio 3': '../portfolios/portfolio3.html',
+        'portfolio 4': '../portfolios/portfolio4.html',
+    };
 
-    function filterCards() {
-        const searchTerm = searchInput.value.toLowerCase();
-
-        cards.forEach(card => {
-            const title = card.querySelector('h3').textContent.toLowerCase();
-            const description = card.querySelector('p').textContent.toLowerCase();
-
-
-            if (title.includes(searchTerm) || description.includes(searchTerm)) {
-                card.style.display = ""; 
+    searchInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            const searchTerm = searchInput.value.toLowerCase();
+            if (portfolioPages[searchTerm]) {
+                window.location.href = portfolioPages[searchTerm]; 
             } else {
-                card.style.display = "none"; 
+                alert('No matching portfolio found');
             }
-        });
-    }   
-    searchInput.addEventListener('input', filterCards);
+        }
+    });
 });

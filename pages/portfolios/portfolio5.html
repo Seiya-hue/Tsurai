@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsurai - Portfolio 5</title>
+    <link rel="stylesheet" href="p5styles.css">
+    <link rel="icon" href="images/icons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="images/icons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png" sizes="60x60">
+    <link rel="icon" href="images/icons/android-chrome-192x192.png" sizes="192x192" type="image/png">
+    <link rel="icon" href="images/icons/android-chrome-512x512.png" sizes="512x512" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Logo NOBG.svg" alt="Logo">
+            <nav>
+                &nbsp;
+                <a href="../homepage/index.html">Home</a>
+                &nbsp;
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">
+                        Portfolios <i class="fa fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="../portfolios/portfolio1.html">Portfolio 1</a>
+                        <a href="../portfolios/portfolio2.html">Portfolio 2</a>
+                        <a href="../portfolios/portfolio3.html">Portfolio 3</a>
+                        <a href="../portfolios/portfolio4.html">Portfolio 4</a>
+                        <a href="../portfolios/portfolio5.html">Portfolio 5</a>
+                        <a href="../portfolios/portfolio6.html">Portfolio 6</a>
+                    </div>
+                </div>
+                &nbsp;
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+        <input type="text" class="search" placeholder="Search for a Portfolio...">
+        <button class="search-button">
+            <i class="fa fa-search"></i>
+        </button>
+    </header>
+
+    <section class="portfolio-banner">
+        <img src="images/Portfolio 5/p5.webp" alt="Motherboard Image">
+        <h1>Comparative Study on Motherboards</h1>
+        <p>Explore the differences between various motherboard form factors, their features, and use cases to make informed decisions for your build.</p>
+    </section>
+
+    <section class="portfolio-content">
+        <h2>Introduction</h2>
+        <p style="margin: 10px 0;">Motherboards are the backbone of any computer system, providing the essential framework for connecting and communicating between components. This portfolio compares ATX, Micro-ATX, and Mini-ITX form factors, highlighting their features and ideal applications.</p>
+
+        <h2 style="margin-top: 20px;">Motherboard Form Factors Comparison</h2>
+        <p>The table below provides a detailed comparison of various motherboard form factors, including their build, CPU slots, memory slots, chipsets, BIOS, PCI slots, and built-in features. This information can help you make an informed decision when choosing the right motherboard for your computer build.</p>
+
+        <div class="table-wrapper">
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Form Factor</th>
+                        <th>Build</th>
+                        <th>CPU Slots</th>
+                        <th>Memory Slots</th>
+                        <th>Chipsets</th>
+                        <th>BIOS</th>
+                        <th>PCI Slots</th>
+                        <th>Built-in Features</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AT Motherboard</td>
+                        <td>Older, larger design</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>No chipset</td>
+                        <td>Basic</td>
+                        <td>3</td>
+                        <td>Lacks built-in features</td>
+                    </tr>
+                    <tr>
+                        <td>ATX Motherboard</td>
+                        <td>Standard design</td>
+                        <td>1</td>
+                        <td>4-8</td>
+                        <td>Supports modern CPUs</td>
+                        <td>Modern</td>
+                        <td>4-7</td>
+                        <td>USB, audio, LAN</td>
+                    </tr>
+                    <tr>
+                        <td>BTX Motherboard</td>
+                        <td>Advanced thermal design</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>Supports modern CPUs</td>
+                        <td>Advanced</td>
+                        <td>3-5</td>
+                        <td>Efficient cooling</td>
+                    </tr>
+                    <tr>
+                        <td>Extended-ATX</td>
+                        <td>Larger design for servers</td>
+                        <td>2</td>
+                        <td>8-12</td>
+                        <td>High-end</td>
+                        <td>Modern</td>
+                        <td>6-8</td>
+                        <td>Multi-GPU support</td>
+                    </tr>
+                    <tr>
+                        <td>LPX Motherboard</td>
+                        <td>Compact</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>Integrated</td>
+                        <td>Basic</td>
+                        <td>1-2</td>
+                        <td>Space-saving</td>
+                    </tr>
+                    <tr>
+                        <td>Micro-ATX</td>
+                        <td>Smaller than ATX</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>Supports modern CPUs</td>
+                        <td>Modern</td>
+                        <td>2-4</td>
+                        <td>Budget-friendly</td>
+                    </tr>
+                    <tr>
+                        <td>Mini ITX</td>
+                        <td>Compact design</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>Integrated</td>
+                        <td>Modern</td>
+                        <td>1</td>
+                        <td>Portable, low power</td>
+                    </tr>
+                    <tr>
+                        <td>Mini-ATX</td>
+                        <td>Intermediate size</td>
+                        <td>1</td>
+                        <td>2-4</td>
+                        <td>Supports modern CPUs</td>
+                        <td>Modern</td>
+                        <td>2-3</td>
+                        <td>Compact features</td>
+                    </tr>
+                    <tr>
+                        <td>Pico BTX</td>
+                        <td>Smallest BTX</td>
+                        <td>1</td>
+                        <td>1-2</td>
+                        <td>Integrated</td>
+                        <td>Modern</td>
+                        <td>1</td>
+                        <td>Compact for specific builds</td>
+                    </tr>
+                    <tr>
+                        <td>Standard-ATX</td>
+                        <td>Default standard</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>Supports modern CPUs</td>
+                        <td>Modern</td>
+                        <td>4-7</td>
+                        <td>Widely compatible</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 style="margin-top: 20px;">Summary and Findings</h2>
+        <p>The comparison table highlights the key differences between various motherboard form factors. Some key takeaways:</p>
+        <ul>
+            <li>ATX and Micro-ATX are the most common and widely compatible form factors, supporting modern CPUs and features.</li>
+            <li>Mini-ITX offers a compact design for space-constrained builds, but with fewer expansion options.</li>
+            <li>Extended-ATX and BTX are designed for specialized use cases like servers and high-performance systems.</li>
+            <li>Older form factors like AT and LPX have limited capabilities and are not recommended for modern builds.</li>
+        </ul>
+        <p>The choice of motherboard form factor should be based on the specific requirements of your computer build, such as the desired size, performance needs, and budget.</p>
+
+        <h2 style="margin-top: 20px;">References</h2>
+        <div class="references-grid">
+            <div class="reference-item">
+                <p>Motherboard Form Factors: A Comprehensive Guide</p>
+                <a href="https://www.pcmag.com/news/motherboard-form-factors-a-comprehensive-guide" target="_blank">
+                    <i class="fa fa-link"></i> Visit Resource
+                </a>
+            </div>
+            <div class="reference-item">
+                <p>Understanding Motherboard Form Factors</p>
+                <a href="https://www.tomshardware.com/reviews/motherboard-form-factors,3694.html" target="_blank">
+                    <i class="fa fa-link"></i> Visit Resource
+                </a>
+            </div>
+            <div class="reference-item">
+                <p>Motherboard Form Factors Explained</p>
+                <a href="https://www.techspot.com/article/1171-motherboard-form-factors-explained/" target="_blank">
+                    <i class="fa fa-link"></i> Visit Resource
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo">
+            <img src="images/Logo NOBG.svg" alt="Logo">
+        </div>
+        <p>&copy; 2024 Jhonne Reinz Jarito. All rights reserved.</p>
+    </footer>
+    <script src="../search.js"></script>
+</body>
+</html>

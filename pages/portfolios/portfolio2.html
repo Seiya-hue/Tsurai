@@ -10,6 +10,9 @@
     <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png" sizes="60x60">
     <link rel="icon" href="images/icons/android-chrome-192x192.png" sizes="192x192" type="image/png">
     <link rel="icon" href="images/icons/android-chrome-512x512.png" sizes="512x512" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header>
@@ -19,12 +22,27 @@
                 &nbsp;
                 <a href="../homepage/index.html">Home</a>
                 &nbsp;
-                <a href="portfolio.html">Portfolios</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">
+                        Portfolios <i class="fa fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="../portfolios/portfolio1.html">Portfolio 1</a>
+                        <a href="../portfolios/portfolio2.html">Portfolio 2</a>
+                        <a href="../portfolios/portfolio3.html">Portfolio 3</a>
+                        <a href="../portfolios/portfolio4.html">Portfolio 4</a>
+                        <a href="../portfolios/portfolio5.html">Portfolio 5</a>
+                        <a href="../portfolios/portfolio6.html">Portfolio 6</a>
+                    </div>
+                </div>
                 &nbsp;
                 <a href="about.html">About</a>
             </nav>
         </div>
-        <input type="text" class="search" placeholder="Search">
+        <input type="text" class="search" placeholder="Search for a Portfolio...">
+        <button class="search-button">
+            <i class="fa fa-search"></i>
+        </button>
     </header>
 
     <section class="portfolio-banner">
@@ -72,6 +90,23 @@
             <b>Enterprise Resource Planning (ERP):</b> Integrate various business functions to improve efficiency and coordination.<br></p>
         </div>
     </section>
+
+    <section class="references">
+        <h2 style="margin-top: 20px;">References</h2>
+        <div class="references-fl">
+            <div class="reference-item">
+                <p>Turban, E., McLean, E., & Westerman, D. (2016). Information Technology for Management: Transforming Business and Organizations (9th ed.). John Wiley & Sons.<br>
+                    <br>
+                    Laudon, K. C., & Laudon, J. P. (2016). Management Information Systems: Managing the Digital Firm (14th ed.). Pearson Prentice Hall.<br>
+                    <br>
+                    Davis, G. B. (2019). Fundamentals of Information Systems (7th ed.). McGraw-Hill Education.<br>
+                    <br>
+                    Hoffer, J. A., Prescott, M. B., & Valacich, J. S. (2019). Modern Information Systems (15th ed.). Pearson.<br>
+                    <br>
+                    Alter, S. (2018). Information Systems: A Management Approach (12th ed.). Pearson.</p>
+                </div>
+    </section>
+
     <footer>
         <div class="logo">
             <img src="images/Logo NOBG.svg" alt="Logo">

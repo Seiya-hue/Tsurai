@@ -10,6 +10,8 @@
     <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png" sizes="60x60">
     <link rel="icon" href="images/icons/android-chrome-192x192.png" sizes="192x192" type="image/png">
     <link rel="icon" href="images/icons/android-chrome-512x512.png" sizes="512x512" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -19,12 +21,27 @@
                 &nbsp;
                 <a href="../homepage/index.html">Home</a>
                 &nbsp;
-                <a href="portfolio.html">Portfolios</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">
+                        Portfolios <i class="fa fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="../portfolios/portfolio1.html">Portfolio 1</a>
+                        <a href="../portfolios/portfolio2.html">Portfolio 2</a>
+                        <a href="../portfolios/portfolio3.html">Portfolio 3</a>
+                        <a href="../portfolios/portfolio4.html">Portfolio 4</a>
+                        <a href="../portfolios/portfolio5.html">Portfolio 5</a>
+                        <a href="../portfolios/portfolio6.html">Portfolio 6</a>
+                    </div>
+                </div>
                 &nbsp;
                 <a href="about.html">About</a>
             </nav>
         </div>
-        <input type="text" class="search" placeholder="Search">
+        <input type="text" class="search" placeholder="Search for a Portfolio...">
+        <button class="search-button">
+            <i class="fa fa-search"></i>
+        </button>
     </header>
 
     <section class="portfolio-banner">
@@ -90,15 +107,85 @@
                 Testing: Verifying that the software meets the specified requirements and is free from defects. <br>
                 <br>
                 Maintenance: Ensuring that the software continues to function correctly over time and adapting it to changing needs</p>
+        </div>
+    </section>
+
+    <section class="references">
+        <h2 style="margin-top: 20px;">References</h2>
+        <div class="references-fl">
+            <div class="reference-item">
+                <h1>Computer science</h1>
+                <p>Aho, Alfred V., et al. (1974). The Design and Analysis of Computer Algorithms. Addison-Wesley.<br>
+                    <br>
+                    Cormen, Thomas H., et al. (2009). Introduction to Algorithms. MIT Press.<br>
+                    <br>
+                    Tanenbaum, Andrew S. (2011). Computer Networks. Prentice Hall.<br>
+                    <br>
+                    Russell, Stuart J., and Norvig, Peter. (2016). Artificial Intelligence: A Modern Approach. Prentice Hall.<br>
+                    <br>
+                    Schneider, Fred B. (2018). Formal Methods: An Engineering Approach. Springer.</p>
+            </div>
+            <div class="reference-item">
+                <h1>Computer Engineering</h1>
+                <p>Patterson, David A., and Hennessy, John L. (2017). Computer Architecture: A Quantitative Approach. Morgan Kaufmann.<br>
+                    <br>
+                    Stallings, William. (2016). Operating Systems: Internals and Design Principles. Prentice Hall.<br>
+                    <br>
+                    Tanenbaum, Andrew S. (2011). Computer Networks. Prentice Hall.<br>
+                    <br>
+                    Foley, James D., et al. (1990). Computer Graphics: Principles and Practice. Addison-Wesley.<br>
+                    <br>
+                    Shirley, Peter. (2003). Realistic Ray Tracing. A. K. Peters.
+                    </p>
+            </div>
+            <div class="reference-item">
+                <h1>Information Science</h1>
+                <p>Laudon, Kenneth C., and Laudon, Jane P. (2016). Management Information Systems. Pearson.<br>
+                    <br>
+                    Turban, Efraim, et al. (2015). Information Technology for Management. Wiley.<br>
+                    <br>
+                    O'Brien, James A., and Marakas, George M. (2018). Management Information Systems. McGraw-Hill.<br>
+                    <br>
+                    Laudon, Kenneth C., and Laudon, Jane P. (2016). Essentials of Management Information Systems. Pearson.<br>
+                    <br>
+                    Turban, Efraim, et al. (2015). Essentials of Information Technology for Management. Wiley.
+                    </p>
+            </div>
+            <div class="reference-item">
+                <h1>Information Technology</h1>
+                <p>O'Brien, James A., and Marakas, George M. (2018). Management Information Systems. McGraw-Hill.<br>
+                    <br>
+                    Laudon, Kenneth C., and Laudon, Jane P. (2016). Essentials of Management Information Systems. Pearson.<br>
+                    <br>
+                    Turban, Efraim, et al. (2015). Essentials of Information Technology for Management. Wiley.<br>
+                    <br>
+                    Turban, Efraim, et al. (2015). Information Technology for Management. Wiley.<br>
+                    <br>
+                    Laudon, Kenneth C., and Laudon, Jane P. (2016). Management Information Systems. Pearson.
+                    </p>
+            </div>
+            <div class="reference-item">
+                <h1>Software Engineering</h1>
+                <p>Pressman, Roger S. (2018). Software Engineering: A Practitioner's Approach. McGraw-Hill.<br>
+                    <br>
+                    Sommerville, Ian. (2016). Software Engineering. Pearson.<br>
+                    <br>
+                    Royce, Winston W. (1970). Managing the Development of Large Software Systems. IEEE.<br>
+                    <br>
+                    Aho, Alfred V., et al. (1974). The Design and Analysis of Computer Algorithms. Addison-Wesley.<br>
+                    <br>
+                    Cormen, Thomas H., et al. (2009). Introduction to Algorithms. MIT Press.                    
+                    </p>
+            </div>
+        </div>
     </section>
 
 <footer>
     <div class="logo">
         <img src="images/Logo NOBG.svg" alt="Logo">
-      </div>
-      <p>&copy; 2024 Jhonne Reinz Jarito. All rights reserved.</p>
+    </div>
+    <p>&copy; 2024 Jhonne Reinz Jarito. All rights reserved.</p>
 </footer>
     <script src="../search.js"></script>
 </body>
 </html>
-    

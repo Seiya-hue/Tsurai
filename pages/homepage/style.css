@@ -43,6 +43,10 @@ header {
   justify-content: space-between;
   filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
   border-bottom: 2px solid #3A255C;
+  position: relative;
+  width: 100%;  
+  top: 0;
+  left: 0;
 }
 
 header .logo {
@@ -69,17 +73,59 @@ header nav a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;  
 }
 
 header nav a:hover {
   color: #6067a6;
 }
 
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
 .search {
+  padding: 8px;
   border: 1px solid #ccc;
-  padding: 5px 10px;
-  border-radius: 4px;
+  border-radius: 20px 0 0 20px;
+  font-size: 14px;
+  flex: 1;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search:focus {
+  border-color: #6067a6;
+}
+
+.search-button {
+  background-color: #6067a6;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #4b5098;
+}
+
+.search-button i {
+  font-size: 16px;
+}
+
+.search-container:hover .search {
+  border-color: #4b5098;
 }
 
 .hero {
@@ -96,7 +142,8 @@ header nav a:hover {
   width: 400px;
   height: 350px;
   margin-right: 30px;
-  object-fit: cover;
+  object-fit: scale-down;
+  float: left;
 }
 
 .hero-content {
@@ -106,19 +153,31 @@ header nav a:hover {
 .hero-content h1 {
   font-size: 24px;
   color: white;
+  object-fit: scale-down;
 }
 
 .hero-content h2 {
   font-size: 24px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: white;
   opacity: 90%;
+  object-fit: scale-down;
 }
 
 .hero-content p {
   margin-bottom: 20px;
   color: white;
+  object-fit: scale-down;
 }
+
+.hero-content p2 {
+  margin-bottom: 20px;
+  color: white;
+  object-fit: scale-down;
+  opacity: 50%;
+  font-style: italic;
+}
+
 
 .preview {
   padding: 25px;
@@ -166,8 +225,8 @@ header nav a:hover {
 }
 
 .card img {
-  width: 280px;
-  height: 150px;
+  max-width: 100%;
+  height: auto;
   background: #ccc;
   margin-bottom: 10px;
   display: block;
@@ -222,4 +281,57 @@ footer .logo img {
 footer p {
   margin: 0;
   font-size: 14px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.dropbtn i {
+    margin-left: 5px;
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropbtn i {
+    transform: rotate(180deg);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2e3350;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.dropdown-content a {
+    color: #d0d5e2;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #444b6e;
+    color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
